@@ -317,7 +317,7 @@
   <details class="instrucciones">
     <summary>¿Cómo se juega?</summary>
     <ol>
-      <li>Pulsa <strong>Llamar problema</strong> para que aparezca una multiplicación.</li>
+      <li>Pulsa <strong>Mostrar problema</strong> de multiplicación.</li>
       <li>Calcula el resultado y pulsa la casilla de tu tarjeta que contiene ese número.</li>
       <li>Si aciertas, la casilla se marca de verde y se llama un nuevo problema.</li>
       <li>Si te equivocas, vuelve a intentarlo. Puedes usar el botón <strong>Pista</strong> si lo necesitas.</li>
@@ -356,13 +356,13 @@
       <h3>Problema actual</h3>
       <div class="zona-problema">
         <div class="problema" id="problema" aria-live="polite">—</div>
-        <div class="mensaje info" id="mensaje" aria-live="polite">Pulsa «Llamar problema» para comenzar.</div>
+        <div class="mensaje info" id="mensaje" aria-live="polite">Pulsa «Mostrar problema» para comenzar.</div>
       </div>
     </div>
 
     <div class="col-tarjeta">
       <div class="fila-juego">
-        <button type="button" class="btn btn-primario" id="btnLlamar">Llamar problema</button>
+        <button type="button" class="btn btn-primario" id="btnLlamar">Mostrar problema</button>
         <button type="button" class="btn btn-sec" id="btnPista">Pista</button>
       </div>
       <h3>Tu tarjeta</h3>
@@ -521,7 +521,7 @@
     renderTablero();
     ocultarBanner();
     elProblema.textContent = "—";
-    fijarMensaje("Pulsa «Llamar problema» para comenzar.", "info");
+    fijarMensaje("Pulsa «Mostrar problema» para comenzar.", "info");
   }
 
   function renderTablero(){
